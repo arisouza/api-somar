@@ -21,6 +21,7 @@ public class HelloController {
     public String bemVindo(@PathVariable String nome) {
         return "Bem vindo, " + nome + "!";
     }
+    
     @GetMapping("/somar/{num1}/{num2}")
     public String somar(@PathVariable String num1, @PathVariable String num2) {
         int numero1 = Integer.parseInt(num1);
